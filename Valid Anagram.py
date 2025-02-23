@@ -5,6 +5,13 @@ class Solution(object):
         :type t: str
         :rtype: bool
         """
+        
+        """
+        Alternate Solutions
+        return Counter(s) == Counter(t)
+        return sorted(s) == sorted(t)
+        """
+        
         tlen =len(t)
         slen = len(s)
         char_map_s = {}
@@ -19,3 +26,4 @@ class Solution(object):
             if char_map_s[c] != char_map_t.get(c,0):
                 return False
         return True
+
