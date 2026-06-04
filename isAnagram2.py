@@ -11,3 +11,7 @@ class Solution:
         for char in t:
             if char not in hash:
                 return False
+            count = hash.get(char) - 1
+            hash[char] = count
+            if count == 0:
+                hash.pop(char,None)
