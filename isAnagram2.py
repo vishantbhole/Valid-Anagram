@@ -15,3 +15,8 @@ class Solution:
             hash[char] = count
             if count == 0:
                 hash.pop(char,None)
+        if not hash:
+            return True
+
+        return False
+            
